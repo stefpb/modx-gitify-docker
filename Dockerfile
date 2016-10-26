@@ -19,6 +19,6 @@ RUN apt-get update && \
 	composer install && \
 	chmod +x Gitify && \
 	cd /var/www/html/ && \
-	mkdir -m777 _data _backup assets
+	mkdir -pm777 _data _backup assets
 
 CMD ["apache2-foreground"]
